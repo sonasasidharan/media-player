@@ -1,0 +1,166 @@
+=>media player
+***************
+
+->landing
+    -header
+    -footer
+->dashboard
+    -header
+    -footer
+    -add vedios
+    -list vedios
+    -categories
+->history
+
+
+1.landing page
+2.add youtube vedios
+3.list add vedios
+4.play added vedios
+5.delete added vedios
+6.add category
+7.list category
+8.list category vedios
+9.add vedios to category
+10.delete category
+11.list watch history
+
+
+already done:-
+
+->project created
+->clean up
+->basic css
+->react-bootstrap install
+    npm i react-bootstrap bootstrap
+->set bootstrap theme
+    bootwatch.com[bootstrap.min.css]
+->pages and components
+->routing of pages and components
+    react-router-dom
+
+
+
+=>Axios:
+**********
+-pacage with methods of xmlHttpRequest
+-handle data transformation  itself
+-promise based client side method
+-installation
+    npm i axios
+-axios request structure
+    ->basic get request
+        axios.get("url)
+    ->other request
+        const re=axios.create({options})
+
+
+    {options}=>
+
+        base_url:"localhost:3000",
+        url:'/allVideos",
+        method:"post",
+        headers;{"Content-Type":"application/json" /"text/plain" /"multipart/form-data"},
+        data:{"Caption:Caption",url:"videourl",image:"img-address-url"}
+
+->using axios () method
+    axios({
+        
+        base_url:"localhost:3000",
+        url:'/allVideos",
+        method:"post",
+        headers;{"Content-Type":"application/json" /"text/plain" /"multipart/form-data"},
+        data:{"Caption:Caption",url:"videourl",image:"img-address-url"}
+
+    })them().catch()
+
+
+
+
+    =>toastify
+        ->external package  for style based alert
+
+
+
+
+
+=>state lifting
+
+                dashboard
+           
+       add videos         videos
+   
+
+
+
+
+<table className='table table-border'>
+      
+        <tr>
+          <th>caption</th>
+          <th>url</th>
+          <th>date& time</th>
+          <th></th>
+        </tr>
+        {
+          his?
+         his.map(item=>{
+
+        <tr>
+          <td>{item.caption}</td>
+          <td>{item.url}</td>
+          <td>{item.datetime}</td>
+          <td>
+            <table className='table table-border'>
+      
+        <tr>
+          <th>caption</th>
+          <th>url</th>
+          <th>date& time</th>
+          <th></th>
+        </tr>
+        {
+          his?
+         his.map(item=>{
+
+        <tr>
+          <td>{item.caption}</td>
+          <td>{item.url}</td>
+          <td>{item.datetime}</td>
+          <td>
+            <i className="fa-solid fa-trash" style={{color:' #63E6BE'}}></i>
+          </td>
+        </tr>
+          })
+          :
+          <tr>
+            <p className='text-danger'>no watch histiry</p>
+          </tr>
+
+
+       
+        }   
+    </table>
+          </td>
+        </tr>
+          })
+          :
+          <tr>
+            <p className='text-danger'>no watch histiry</p>
+          </tr>
+
+
+       
+        }   
+    </table>
+
+
+
+
+    student management app
+
+    -teacher login-landing
+    student list-dashboard
+    -edit,delete
+    -add new student
+    ->id,name,dob,class,address,email
